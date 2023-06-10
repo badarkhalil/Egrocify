@@ -298,6 +298,7 @@ class CustomerAuthController extends Controller
                         'updated_at' => now(),
                     ]
                 );
+		
                 $response = SMS_module::send($request['phone'], $otp);
                 if ($response != 'success') {
 

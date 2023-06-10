@@ -243,7 +243,7 @@ class VoucherController extends Controller
 
     public function sharevoucher(Request $request){
        	VoucherBuyer::where('id', $request->voucher)->increment('count');
-        $link = 'https://play.google.com/store/apps/details/Facebook?id=com.facebook.katana&hl=en&gl=US';
+        $link = 'https://play.google.com/store/apps/details?id=com.grocify.store';
         return redirect($link);
     }
 
